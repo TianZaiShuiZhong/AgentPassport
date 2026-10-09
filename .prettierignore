@@ -1,0 +1,10 @@
+node_modules
+dist
+.data
+.npm-cache
+artifacts
+deployments
+test-results
+playwright-report
+package-lock.json
+article-source.html

@@ -1,0 +1,56 @@
+{
+  "verifiedAt": "2026-10-09T14:41:27.728Z",
+  "registeredWalletAgentId": 2,
+  "latestActivityAgentId": 1,
+  "proofs": [
+    {
+      "agentId": 1,
+      "type": "result",
+      "txHash": "0x92e77ff22fdf5b918cdc895d2ff647d1b86447e23e24b13d59a6eb0f35f56feb",
+      "valid": true,
+      "checks": {
+        "chain": true,
+        "signature": true,
+        "domain": true,
+        "transaction": true,
+        "commitment": true,
+        "content": true,
+        "application": true,
+        "event": true
+      },
+      "signer": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+      "digest": "0x25b00cef9d76b8c3af6d7f58159e78527e1d5f8a5f5c77cb652b9c5d70c58690",
+      "blockNumber": 69564279
+    },
+    {
+      "agentId": 1,
+      "type": "access",
+      "txHash": "0x5f300a6916439d788c4f1fee64c951b8dd4225f670ff84b1b34b45d7e637c769",
+      "valid": true,
+      "checks": {
+        "chain": true,
+        "signature": true,
+        "domain": true,
+        "transaction": true,
+        "commitment": true,
+        "memory": true,
+        "application": true,
+        "event": true
+      },
+      "signer": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+      "digest": "0x17ba104fb299dd2237a1f49cde8a96d9ecc8b1677d10cf3c4cbdaedea955e7f1",
+      "blockNumber": 69564235
+    }
+  ],
+  "latestGrant": {
+    "id": "0xa070a25ae2ed1f953221575fe9d56f195b9a35d75fcad0f7e0fda2ca87ffecc4",
+    "agentId": 1,
+    "remaining": 4,
+    "revoked": false
+  },
+  "walletWorkspaceActivity": {
+    "memories": 0,
+    "grants": 0,
+    "receipts": 0
+  }
+}

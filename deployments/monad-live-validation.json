@@ -1,0 +1,142 @@
+{
+  "chainId": 10143,
+  "contractAddress": "0x7907858dA5b94B34C51b6F177abF23d4C9bb1763",
+  "validatedAt": "2026-10-09T13:10:45.008Z",
+  "privateAccess": {
+    "status": 403,
+    "code": "NO_GRANT"
+  },
+  "grantIds": [
+    "0x4572eef771573bbda37d7fc41d9cad5f543b2c8ea01f2129463448b8f45cb0a6",
+    "0x277c4840589343a1f79eb1db33881b06db3d25405fa88911b1cde4873963c1a4"
+  ],
+  "grantTxHashes": [
+    "0x9f8abc952b4f59cd351dd89e59f4a65acc9f3dc8a1aecd74a087688208658de1",
+    "0xc9eac0276bbfa21843381ffe90686a46246665b2aa3ef8f7853f2a8517580aa5"
+  ],
+  "outputReceipt": {
+    "agentId": 1,
+    "id": "0x37b271c2d27aa0f31918df053996123a6db7e5286700d8a3ae4e9d1cd6600a79",
+    "type": "result",
+    "domain": {
+      "name": "AgentPassport",
+      "version": "1",
+      "chainId": 10143,
+      "verifyingContract": "0x7907858dA5b94B34C51b6F177abF23d4C9bb1763"
+    },
+    "result": {
+      "requestId": "0x5841a3e47af332653a192be5b211bd50f278fc5599c4a8972f454c469d55fa3b",
+      "resultHash": "0x583cab30b7415502cc3ffb4a4843ce7bac5c418c0ffe155b3cea91dc38396d75",
+      "validationHash": "0x7b4e9d83b226ae87b278259e2de7900392f4293962382a5c5847133d22a33d49"
+    },
+    "signature": "0xbcc334aa97f689b8ec4e49ec7c02f0294d344de14d210cd5252a01149d8023315ce6115308c2a32bb4dad5dea19833e6833f8592d20862d31493bb40756116261c",
+    "output": {
+      "title": "介绍 AgentPassport：用户可控的跨应用记忆与授权",
+      "text": "**用户的问题**  \n当人们在多个 AI 应用之间切换时，记忆往往散落在不同产品中：一个助手知道偏好，另一个知道日程，第三个知道健康信息。用户很难统一查看、授权或撤回这些记忆；应用则可能要么重复询问，要么过度索取。结果是跨应用体验不连贯，隐私与可控性也不清晰。\n\n**方案**  \nAgentPassport 是面向 AI 智能体的跨应用记忆与授权协议。它让用户授权指定应用访问特定记忆，并设置访问次数、有效期与撤销权限。身份、授权和凭证承诺保存在 Monad；记忆正文保存在加密的链下存储。这样，链上保存的是可验证的授权状态与承诺，而不是记忆内容本身。目标用户是多应用 AI 使用者和 Agent 应用开发者，属于 Trust, Identity & AI Infrastructure 赛道。其重点不是替用户做决策，而是把“谁在什么条件下可以访问哪段记忆”变成可配置、可撤销的授权关系。\n\n**例子**  \n例如，用户有一段记忆：“每周三晚不宜安排会议”。用户可以授权某个日程 Agent 读取这段记忆，有效期 30 天、最多访问 20 次；若用户之后撤销授权，该 Agent 就不能再按协议获取这段记忆。身份、授权状态与相关凭证承诺记录在 Monad，记忆正文仍放在加密的链下存储中，应用需在授权范围内使用。\n\n**实现边界**  \nAgentPassport 能表达和管理身份、授权、次数、有效期与撤销，也能保存凭证承诺；但它不保证 AI 输出正确，链上记录也不证明 AI 推理正确。记忆正文在链下加密，实际安全性还依赖密钥管理、存储服务和应用是否遵守授权。对于已经获取的数据，撤销通常只能阻止后续访问，难以收回副本。因此，它更适合作为授权与记忆访问的基础层，而不是对模型能力或结论正确性的证明。",
+      "source": "LLM · deepseek-flash",
+      "memoryIds": [
+        "0x9432a8ea464a26c43e53ecb70d01082766de8b398fcfb221cacc7eb55f22c0d7",
+        "0x6a63ac8fdf84e820ec6aacfa01b90e80e7132d4f5c331aec0cc7a73415efe4e9"
+      ],
+      "accessRequestIds": [
+        "0xa7e7d93bb21f522fb15d61c7fd4e6140f75b6cbd2137cdc467d1b753b2914356",
+        "0x5841a3e47af332653a192be5b211bd50f278fc5599c4a8972f454c469d55fa3b"
+      ]
+    },
+    "validation": {
+      "validator": "Writing Studio rule validator v1 (app self-attestation)",
+      "passed": true,
+      "checks": [
+        {
+          "name": "内容长度",
+          "passed": true,
+          "detail": "705 字符，要求 180–2000"
+        },
+        {
+          "name": "必要段落",
+          "passed": true,
+          "detail": "包含问题、方案、例子和实现边界四个段落"
+        },
+        {
+          "name": "输入范围",
+          "passed": true,
+          "detail": "本次写作只接受项目背景与写作偏好"
+        },
+        {
+          "name": "输入关联",
+          "passed": true,
+          "detail": "输出声明绑定到实际读取的记忆 ID"
+        }
+      ]
+    },
+    "app": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+    "appId": "writer",
+    "title": "介绍 AgentPassport：用户可控的跨应用记忆与授权",
+    "txHash": "0x75e510ab9f769c1673120ec1a2477cb8e48598e1f591365855776897791b6f4f",
+    "blockNumber": 69547809,
+    "at": "2026-10-09T13:10:39.356Z"
+  },
+  "verification": {
+    "valid": true,
+    "checks": {
+      "chain": true,
+      "signature": true,
+      "domain": true,
+      "transaction": true,
+      "commitment": true,
+      "content": true,
+      "application": true,
+      "event": true
+    },
+    "signer": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+    "digest": "0x39967eca49d4b9a1ac32ec6ba56b1914475e45eed4e6f9e194fd3c339286a12d",
+    "blockNumber": 69547809
+  },
+  "revocation": {
+    "deniedStatus": 403,
+    "deniedCode": "REVOKED",
+    "grantTxHash": "0x6e3fa29cb4e54d18d4ffcec10b2e35e4fb70cec217853dcb8ef72a917f113002",
+    "readReceipt": {
+      "agentId": 1,
+      "id": "0x19b0fda88bd75f9088599f973177c2b1fb08a8da41b9879b42bd904a83172459",
+      "type": "access",
+      "domain": {
+        "name": "AgentPassport",
+        "version": "1",
+        "chainId": 10143,
+        "verifyingContract": "0x7907858dA5b94B34C51b6F177abF23d4C9bb1763"
+      },
+      "access": {
+        "grantId": "0x41c44c7d3fe356603f61a90553ea36f2e0c8187d8855a3cce764850c48ccebe4",
+        "requestId": "0x19b0fda88bd75f9088599f973177c2b1fb08a8da41b9879b42bd904a83172459",
+        "nonce": "2",
+        "deadline": 1791551554
+      },
+      "signature": "0x4c60e21ba97eeef0ebcb46bdc237cf7a3d2f27237e928c61052b99c1b24953ee097b847fd0798e26b9fc306b9d01bcd8d36b16457477cea7d6c7f4303d68be851b",
+      "app": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+      "appId": "writer",
+      "memoryId": "0x6a63ac8fdf84e820ec6aacfa01b90e80e7132d4f5c331aec0cc7a73415efe4e9",
+      "title": "AgentPassport · 项目背景",
+      "ciphertextHash": "0xa18b18cbfbbecafd742047e47ac8a0b433307a431f255f492feabb619f6daa06",
+      "txHash": "0x024a77957f4d5074151cbc6852e8971c2b5ee52711b18047d776adc60a655abb",
+      "blockNumber": 69548007,
+      "at": "2026-10-09T13:11:40.902Z"
+    },
+    "historicalVerification": {
+      "valid": true,
+      "checks": {
+        "chain": true,
+        "signature": true,
+        "domain": true,
+        "transaction": true,
+        "commitment": true,
+        "memory": true,
+        "application": true,
+        "event": true
+      },
+      "signer": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+      "digest": "0x80083647b6c732937c387043a58a76dfde4d1c5e08d682e914b5a716b84b9d59",
+      "blockNumber": 69548007
+    }
+  }
+}

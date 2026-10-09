@@ -1,0 +1,11 @@
+{
+  "name": "AgentPassport",
+  "protocolVersion": 2,
+  "chainId": 10143,
+  "address": "0x7907858dA5b94B34C51b6F177abF23d4C9bb1763",
+  "transactionHash": "0x375fe2f83bc53ab09c4502a75e0d14c8e19e88079b3e506a71ded1f1a4d8b81a",
+  "blockNumber": 69547336,
+  "deployer": "0x0CAA1d1bEC0ADfE0E942637aaDDA197F89F02D25",
+  "deployedAt": "2026-10-09T13:08:15.066Z",
+  "rpcUrl": "https://testnet-rpc.monad.xyz"
+}

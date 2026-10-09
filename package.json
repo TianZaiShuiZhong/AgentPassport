@@ -1,0 +1,38 @@
+{
+  "name": "agentpassport",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc --noEmit && vite build",
+    "start": "node scripts/dev.mjs --production",
+    "public": "node scripts/public.mjs",
+    "compile": "node scripts/compile.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "deploy:monad": "node scripts/deploy.mjs",
+    "verify:receipt": "node scripts/verify-receipt.mjs"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.2.0",
+    "dotenv": "^17.2.0",
+    "ethers": "^6.15.0",
+    "express": "^5.1.0",
+    "ganache": "^7.9.2",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "solc": "0.8.30",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "prettier": "3.9.9",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}

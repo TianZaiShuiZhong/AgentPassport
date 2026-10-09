@@ -1,0 +1,132 @@
+{
+  "verifiedAt": "2026-10-09T14:23:21.005Z",
+  "chainId": 10143,
+  "contractAddress": "0x7907858dA5b94B34C51b6F177abF23d4C9bb1763",
+  "agentId": 2,
+  "owner": "0x40CF89b87e178FB5847B7677D8d386CA2716FF3F",
+  "identityTx": "0xfb687683f3574fbf29de7d8c65539c7a7e3c2bf753c945283fe545a5f0700527",
+  "blockNumber": 69561290,
+  "relayer": "0x0CAA1d1bEC0ADfE0E942637aaDDA197F89F02D25",
+  "ingestor": "0x4f5f105B20E66547b6806C901ddFf717f0E050cE",
+  "checks": {
+    "chain": true,
+    "confirmed": true,
+    "contract": true,
+    "owner": true,
+    "agentSigner": true,
+    "ownerSignature": true,
+    "registrationCall": true,
+    "registrationEvent": true,
+    "active": true
+  },
+  "valid": true,
+  "pending": [],
+  "flowVerifiedAt": "2026-10-09T15:17:08.094Z",
+  "liveFlow": {
+    "memoryCount": 1,
+    "grantTx": "0x3100919c5e4c9900fea96d905c401119a3bf8734709e44e69e35d6973a09cb7f",
+    "grantChecks": {
+      "confirmed": true,
+      "ownerSignature": true,
+      "agentId": true,
+      "memoryIdsHash": true,
+      "grantIdsHash": true
+    },
+    "proofs": [
+      {
+        "type": "result",
+        "txHash": "0xa7a3cfc7dc1eb4cd02613b750096e08d1cc757b9717bfd3fb3faa381b9462b75",
+        "valid": true,
+        "checks": {
+          "chain": true,
+          "signature": true,
+          "domain": true,
+          "transaction": true,
+          "commitment": true,
+          "content": true,
+          "application": true,
+          "event": true
+        },
+        "signer": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+        "digest": "0xfd16dd665a6ae742e29e0b0dcc11d5495383c442799eaa62c1c3c08ee3628325",
+        "blockNumber": 69570418
+      },
+      {
+        "type": "access",
+        "txHash": "0x8064cdd05818bf5adc315779032afdf9416bf71825784a005f697d32fcfb8bf2",
+        "valid": true,
+        "checks": {
+          "chain": true,
+          "signature": true,
+          "domain": true,
+          "transaction": true,
+          "commitment": true,
+          "memory": true,
+          "application": true,
+          "event": true
+        },
+        "signer": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+        "digest": "0x0fc2642194ba338ed1bad68a2db791b8638b7a8f1bf751f73902c475b967fc7e",
+        "blockNumber": 69570371
+      }
+    ],
+    "remaining": 3,
+    "revoked": true,
+    "generation": "DeepSeek live generation via the authorized writer service after the selection fix",
+    "latestUserReceipts": [
+      {
+        "type": "result",
+        "txHash": "0x37c89a3b5e6e864185c6e80ce252b2342afecf14e79687c2b9481156c99e6198",
+        "valid": true,
+        "checks": {
+          "chain": true,
+          "signature": true,
+          "domain": true,
+          "transaction": true,
+          "commitment": true,
+          "content": true,
+          "application": true,
+          "event": true
+        },
+        "signer": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+        "digest": "0xed125fae7d310117caa1563955354b9f30556205d21b14a348fbec232b909af6",
+        "blockNumber": 69572286
+      },
+      {
+        "type": "access",
+        "txHash": "0xe93ef6ef751d4b4df9fbec2e1eb83f9859857f9c913f27a8c5ae40176c60f99e",
+        "valid": true,
+        "checks": {
+          "chain": true,
+          "signature": true,
+          "domain": true,
+          "transaction": true,
+          "commitment": true,
+          "memory": true,
+          "application": true,
+          "event": true
+        },
+        "signer": "0x24e9f1d64EAbfA27FDf1a50Ddf48aD2E3503feD4",
+        "digest": "0xe6a2240d434d8bbcc2d579c7b984a149e59e19e6a97afcf21b176f1c3e30b859",
+        "blockNumber": 69572242
+      }
+    ]
+  },
+  "revocation": {
+    "txHash": "0xd6e5bb4b14862680a8567f70912ff55ca6de02e37fc4e153f2f51d93513e0b00",
+    "checks": {
+      "confirmed": true,
+      "ownerSignature": true,
+      "agentId": true,
+      "grantIdsHash": true,
+      "includesExpectedGrant": true,
+      "revoked": true
+    },
+    "deniedRetry": {
+      "status": 403,
+      "code": "REVOKED"
+    },
+    "historicalReceiptsStillValid": true
+  },
+  "fullWalletFlowPassed": true
+}

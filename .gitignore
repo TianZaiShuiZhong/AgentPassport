@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.data/
+.npm-cache/
+.env
+.env.*
+!.env.example
+artifacts/
+test-results/
+playwright-report/
+*.log
+article-source.html
+.tools/
+release/
