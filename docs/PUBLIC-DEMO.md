@@ -53,4 +53,4 @@ cloudflared 来自 Cloudflare 官方 GitHub release，当前版本 2026.10.0，�
 
 公网完整写流程也已实测：授权提交到 Monad、未授权私密读取被拒绝、DeepSeek 实际生成、输出承诺上链、从浏览器独立核验、撤销后拒绝重试。
 
-录屏草稿在 `docs/demo-video/public-live-demo.webm`，没有配音或字幕，尚不是最终参赛视频。重新录制需安装 Playwright FFmpeg（`npx playwright install ffmpeg`）并运行 `node scripts/record-demo.mjs`；脚本会实际创建/撤销演示授权并使用一次模型调用。
+项目所有者本机的录屏草稿在 `docs/demo-video/public-live-demo.webm`，没有配音或字幕，尚不是最终参赛视频；该本地草稿不纳入源码仓库。重新录制需安装 Playwright FFmpeg（`npx playwright install ffmpeg`）并运行 `node scripts/record-demo.mjs`；脚本会实际创建/撤销演示授权并使用一次模型调用。
